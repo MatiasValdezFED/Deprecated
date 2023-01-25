@@ -20,7 +20,9 @@ dark-purple: #38273bff;
 
 h1 {
     color: white;
-    background-color: darkmagenta;
+    background-color: #dabedcff;
+    display: flex;
+    justify-content: center;
 }
 
 ul {
@@ -76,10 +78,13 @@ ul {
     object-fit: cover;
 }
 
-/* Main Productos */
-.img__productos {
+/* Productos */
+
+.producto img{
     width: 250px;
 }
+
+
 
 /* Main Como Comprar */
 
