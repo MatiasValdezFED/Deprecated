@@ -31,13 +31,14 @@ ul {
 
 /* Menu/Navegador */
 
-.img__logo {
-    width: 100px
-}
-
 .header {
     display: flex;
     flex-direction: column;
+}
+
+.img__logo {
+    width: 100px;
+    padding: 1rem;
 }
 
 .nav {
@@ -80,11 +81,19 @@ ul {
 
 /* Productos */
 
+.producto {
+    width: 33vw;
+    text-align: center;
+}
+
 .producto img{
     width: 250px;
 }
 
-
+.productos__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 
 /* Main Como Comprar */
 
