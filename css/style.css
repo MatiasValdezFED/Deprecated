@@ -49,13 +49,17 @@ ul {
 .menu {
     display: flex;
     font-size: 20px;
-    position: relative;
     justify-content: center
 }
 
 .menu li {
     display: inline;
-    margin: 2rem;
+    padding: 2rem;
+}
+
+.menu li:hover{
+    background-color: rgb(65, 1, 27);
+    cursor: pointer;
 }
 
 .menu a {
@@ -79,11 +83,115 @@ ul {
     object-fit: cover;
 }
 
+.categorias__main_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 50%);
+    padding: 2rem;
+    grid-template-areas: 
+    "hilos botones elasticos"
+    "cintas lanas cierres"
+    ;
+}
+
+.titulo__cat{
+    position: relative;
+    top: 65px;
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+    left: 20px;
+}
+
+.hilos {
+    grid-area: hilos;
+}
+
+.hilos img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.botones {
+    grid-area: botones;
+
+}
+
+.botones img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+.elasticos {
+    grid-area: elasticos;
+
+}
+
+.elasticos img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+.cintas {
+    grid-area: cintas;
+}
+
+.cintas img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+.lanas {
+    grid-area: lanas;
+}
+
+.lanas img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+.cierres {
+    grid-area: cierres;
+}
+
+.cierres img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+ .categorias__main_grid li{
+    justify-self: center;
+    margin: 25px;
+} 
+
 /* Productos */
+
+.productos__grid h2{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
 
 .producto {
     width: 33vw;
     text-align: center;
+}
+
+.producto div{
+    margin-left: 78px;
+    margin-right: 78px;
+    margin:auto;
+}
+
+.carrito__2 {
+    color: white;
+    background-color: #72002eff;
+    width: 250px;
 }
 
 .producto img{
@@ -108,12 +216,12 @@ ul {
 
 .footer {
     display: flex;
-    position: relative;
     background-color: #38273bff;
 }
 
 .footer a {
-    transform: translate(115px, 100px);
+    transform: translate(130px, 75px);
+    height: 37px;
 }
 
 
