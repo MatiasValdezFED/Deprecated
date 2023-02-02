@@ -8,17 +8,16 @@ old-lavender: #70566dff;
 dark-purple: #38273bff; 
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
 
 /* General */
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Comic Neue', cursive;
+    font-family: 'Prompt', sans-serif;
 }
 
 h1 {
