@@ -55,36 +55,588 @@
     </header>
     <main>
         <h1>CONTACTO</h1>
-        <form action="#" method="get">
-            <input type="text" placeholder="Nombre completo" name="Nombre">
-            <br><br>
-            <input type="number" placeholder="Edad" name="Edad">
-            <br><br>
-            <input type="password" placeholder="Contraseña" name="Contrasena">
-            <br><br>
-            <input type="email" placeholder="Ingrese su email">
-            <br><br>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Deje aquí su mensaje"></textarea>
-            <br><br>
-            <label>
-                <span>Prefiero contacto telefónico</span>
-                <input type="radio" value="telefónico" name="radio">
-                <span>Prefiero contacto por correo</span>
-                <input type="radio" value="correo" name="radio">
-            </label>
-            <br><br>
-            <select name="localidad">
-                <option value="">Seleccionar localidad</option>
-                <option value="CAP">Capital</option>
-                <option value="RIO">Río Ceballos</option>
-                <option value="SAL">Salsipuedes</option>
-            </select>
-            <br><br>
-            <input type="submit" value="Suscribirme a las promociones">
-            <br><br>
-            <input type="reset">
-            <br><br>
-            <button>Enviar</button>
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+                <label for="validationCustom01" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="validationCustom01" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="validationCustom02" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustomUsername" class="form-label">Teléfono</label>
+                <div class="input-group has-validation">
+                    <input type="text" class="form-control" id="validationCustomUsername"
+                        aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                        Por favor inserte un teléfono
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom03" class="form-label">Correo Electrónico</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+                <div class="invalid-feedback">
+                    Por favor inserte un e-mail
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationCustom04" class="form-label">Ciudad</label>
+                <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Seleccione...</option>
+                    <option>Achiras</option>
+                    <option>Adelia María</option>
+                    <option>Agua de Oro</option>
+                    <option>Alcira (Gigena)</option>
+                    <option>Aldea Santa María</option>
+                    <option>Alejandro Roca (Est. Alejandro)</option>
+                    <option>Alejo Ledesma</option>
+                    <option>Alicia</option>
+                    <option>Almafuerte</option>
+                    <option>Alpa Corral</option>
+                    <option>Alta Gracia</option>
+                    Alto Alegre
+                    Alto de los Quebrachos
+                    Altos de Chipión
+                    Amboy
+                    Ámbul
+                    Ana Zumarán
+                    Anisacate
+                    Arias
+                    Arroyito
+                    Arroyo Algodón
+                    Arroyo Cabral
+                    Arroyo Los Patos
+                    Ascochinga
+                    Assunta
+                    Atahona
+                    Ausonia
+                    Avellaneda
+                    Ballesteros
+                    Ballesteros Sur
+                    Balnearia
+                    Bañado de Soto
+                    Barrio Gilbert (- Tejas Tres; 1° de Mayo)
+                    Barrio Nuevo Rio Ceballos
+                    Barrio Santa Isabel
+                    Bell Ville
+                    Bengolea
+                    Benjamín Gould
+                    Berrotarán
+                    Bialet Massé
+                    Bouwer
+                    Brinkmann
+                    Bulnes
+                    Cabalango
+                    Calchín
+                    Calchín Oeste
+                    Camilo Aldao
+                    Caminiaga
+                    Campos del Virrey
+                    Cañada del Sauce
+                    Cañada de Luque
+                    Cañada de Machado
+                    Cañada de Río Pinto
+                    Canals
+                    Candelaria Sur
+                    Canteras El Sauce
+                    Canteras Quilpo
+                    Capilla del Carmen
+                    Capilla del Monte
+                    Capilla de los Remedios
+                    Capilla de Sitón
+                    Capilla Vieja
+                    Capitán General Bernardo O'Higgins
+                    Carnerillo
+                    Carrilobo
+                    Casa Bamba
+                    Casa Grande
+                    Caseros Centro
+                    Causana
+                    Cavanagh
+                    Cerro Colorado
+                    Chaján
+                    Chalacea
+                    Chañar Viejo
+                    Chancaní
+                    Charbonier
+                    Charras
+                    Chazón
+                    Chilibroste
+                    Chucul
+                    Chuña
+                    Chuña Huasi
+                    Churqui Cañada
+                    Ciénaga del Coro
+                    Cintra
+                    Colazo
+                    Colonia 10 de Julio
+                    Colonia Almada
+                    Colonia Anita
+                    Colonia Barge
+                    Colonia Bismarck
+                    Colonia Bremen
+                    Colonia Caroya
+                    Colonia Italiana
+                    Colonia Iturraspe
+                    Colonia Las Cuatro Esquinas
+                    Colonia Las Pichanas
+                    Colonia Marina
+                    Colonia Prosperidad
+                    Colonia San Bartolomé
+                    Colonia San Pedro
+                    Colonia Santa María
+                    Colonia Tirolesa
+                    Colonia Valtelina
+                    Colonia Veinticinco
+                    Colonia Vicente Agüero
+                    Colonia Videla
+                    Colonia Vignaud
+                    Conlara
+                    Copacabana
+                    Córdoba
+                    Coronel Baigorria
+                    Coronel Moldes
+                    Corral de Bustos
+                    Corralito
+                    Corral Quemado
+                    Cosquín
+                    Costa Azul
+                    Costa Sacate
+                    Country Chacras de la Villa (- Country San Isidro)
+                    Cruz Alta
+                    Cruz Caña
+                    Cruz de Caña
+                    Cruz del Eje
+                    Cuesta Blanca
+                    Dalmacio Vélez
+                    Deán Funes
+                    Del Campillo
+                    Despeñaderos
+                    Devoto
+                    Diego de Rojas
+                    Dique Chico
+                    Dos Arroyos
+                    El Alcalde (Est. Tala Norte)
+                    El Arañado
+                    El Brete
+                    El Chacho
+                    El Corcovado - El Torreón
+                    El Crispín
+                    El Durazno
+                    Elena
+                    El Fortín
+                    El Fuertecito
+                    El Huayco
+                    El Manzano
+                    El Pantanillo
+                    El Potrerillo
+                    El Rastreador
+                    El Rincón
+                    El Rodeo
+                    El Tío
+                    El Tuscal
+                    Embalse
+                    Esquina
+                    Esquina del Alambre
+                    Estación Colonia Tirolesa
+                    Estación Lecueder
+                    Estación Luxardo
+                    Estancia de Guadalupe
+                    Estancia Vieja
+                    Etruria
+                    Eufrasio Loza
+                    Falda del Cañete
+                    Falda del Carmen
+                    Freyre
+                    General Baldissera
+                    General Cabrera
+                    General Deheza
+                    General Fotheringham
+                    General Levalle
+                    General Paz
+                    General Roca
+                    Guanaco Muerto
+                    Guasapampa
+                    Guatimozín
+                    Gutemberg
+                    Hernando
+                    Hipólito Bouchard (Buchardo)
+                    Huanchillas
+                    Huerta Grande
+                    Huinca Renancó
+                    Idiazábal
+                    Impira
+                    Inriville
+                    Isla Verde
+                    Italó
+                    James Craik
+                    Jesús María
+                    José de la Quintana
+                    Justiniano Posse
+                    Kilómetro 658
+                    La Banda
+                    La Batea
+                    La Boca del Río
+                    Laborde
+                    Laboulaye
+                    La Calera
+                    La Carbonada
+                    La Carlota
+                    La Carolina
+                    La Cautiva
+                    La Cesira
+                    La Cortadera
+                    La Cruz
+                    La Cumbre
+                    La Cumbrecita
+                    La Falda
+                    La Francia
+                    La Gilda
+                    La Granja
+                    Laguna Larga
+                    La Higuera
+                    La Laguna
+                    La Morada
+                    La Paisanita
+                    La Palestina
+                    La Pampa
+                    La Paquita
+                    La Para
+                    La Paz
+                    La Perla
+                    La Playa
+                    La Playosa
+                    La Población
+                    La Posta
+                    La Puerta
+                    La Puerta
+                    La Quinta
+                    La Ramada
+                    La Rancherita y Las Cascadas
+                    La Rinconada
+                    Las Acequias
+                    Las Albahacas
+                    Las Arrias
+                    Las Bajadas
+                    Las Caleras
+                    Las Calles
+                    Las Cañadas
+                    Las Chacras
+                    Las Corzuelas
+                    La Serranita
+                    Las Gramillas
+                    Las Higueras
+                    Las Isletillas
+                    Las Jarillas
+                    Las Junturas
+                    Las Mojarras
+                    Las Oscuras
+                    Las Palmas
+                    Las Peñas (Sud)
+                    Las Peñas
+                    Las Perdices
+                    Las Playas
+                    Las Rabonas
+                    Las Saladas
+                    Las Tapias
+                    Las Varas
+                    Las Varillas
+                    Las Vertientes
+                    La Tordilla
+                    La Travesía
+                    Leguizamón
+                    Leones
+                    Loma Bola
+                    Los Callejones
+                    Los Cedros
+                    Los Cerrillos
+                    Los Chañaritos
+                    Los Chañaritos
+                    Los Cisnes
+                    Los Cocos
+                    Los Cóndores
+                    Los Hornillos
+                    Los Hoyos
+                    Los Mistoles
+                    Los Molinos
+                    Los Molles
+                    Los Molles
+                    Los Pozos
+                    Los Reartes
+                    Los Surgentes
+                    Los Talares
+                    Los Zorros
+                    Lozada
+                    Luca
+                    Lucio V. Mansilla
+                    Luque
+                    Lutti
+                    Luyaba
+                    Malagueño
+                    Malena
+                    Mallín
+                    Malvinas Argentinas
+                    Manfredi
+                    Maquinista Gallini
+                    Marcos Juárez
+                    Marull
+                    Matorrales
+                    Mattaldi
+                    Mayu Sumaj
+                    Media Naranja
+                    Melo
+                    Mendiolaza
+                    Mi Granja
+                    Mina Clavero
+                    Miramar
+                    Monte Buey
+                    Monte Cristo
+                    Monte de los Gauchos
+                    Monte del Rosario
+                    Monte Leña
+                    Monte Maíz
+                    Monte Ralo
+                    Morrison
+                    Morteros
+                    Mussi
+                    Nicolás Bruzzone
+                    Noetinger
+                    Nono
+                    Obispo Trejo
+                    Olaeta
+                    Oliva
+                    Olivares de San Nicolás
+                    Onagoity
+                    Oncativo
+                    Ordóñez
+                    Pacheco de Melo
+                    Pajas Blancas
+                    Pampayasta Norte
+                    Pampayasta Sur
+                    Panaholma
+                    Parque Calmayo
+                    Pascanas
+                    Pasco
+                    Paso del Durazno
+                    Paso del Durazno
+                    Paso Viejo
+                    Pilar
+                    Pincén
+                    Piquillín
+                    Plaza de Mercedes
+                    Plaza Luxardo
+                    Plaza San Francisco
+                    Porteña
+                    Potrero de Garay
+                    Pozo del Molle
+                    Pozo Nuevo
+                    Pueblo Comechingones
+                    Pueblo Italiano
+                    Puesto de Castro
+                    Punta del Agua
+                    Quebracho Herrado
+                    Quebracho Ladeado
+                    Quebrada de los Pozos
+                    Quebrada de Luna
+                    Quilino
+                    Rafael García
+                    Ramón J. Cárcano
+                    Ranqueles
+                    Rayo Cortado
+                    Rincón
+                    Río Bamba
+                    Río Ceballos
+                    Río Cuarto
+                    Río de los Sauces
+                    Río Primero
+                    Río Segundo
+                    Río Tercero
+                    Rosales
+                    Rosario del Saladillo
+                    Sacanta
+                    Sagrada Familia
+                    Saira
+                    Saladillo
+                    Saldán
+                    Salsacate
+                    Salsipuedes
+                    Sampacho
+                    Sanabria
+                    San Agustín
+                    San Antonio de Arredondo
+                    San Antonio de Litín
+                    San Basilio
+                    San Carlos Minas
+                    San Clemente
+                    San Esteban
+                    San Francisco
+                    San Francisco del Chañar
+                    San Gerónimo
+                    San Huberto
+                    San Ignacio (Loteo San Javier)
+                    San Javier y Yacanto
+                    San Joaquín
+                    San José
+                    San José de la Dormida
+                    San José de las Salinas
+                    San Lorenzo
+                    San Marcos
+                    San Marcos Sierra
+                    San Martín
+                    San Nicolás (- Tierra Alta)
+                    San Pedro
+                    San Pedro de Gütemberg
+                    San Pedro de Toyos
+                    San Pedro Norte
+                    San Roque
+                    San Severo
+                    Santa Catalina (Holmberg)
+                    Santa Catalina
+                    Santa Elena
+                    Santa Elena
+                    Santa Eufemia
+                    Santa Magdalena (Est. Jovita)
+                    Santa María de Punilla
+                    Santa Rosa de Calamuchita
+                    Santa Rosa de Río Primero
+                    Santiago Temple
+                    San Vicente
+                    Sarmiento
+                    Saturnino María Laspiur
+                    Sauce Arriba
+                    Sebastián Elcano
+                    Seeber
+                    Segunda Usina
+                    Serrano
+                    Serrezuela
+                    Silvio Pellico
+                    Simbolar
+                    Sinsacate
+                    Socavones
+                    Solar de los Molinos
+                    Suco
+                    Tala Cañada
+                    Tala Huasi
+                    Talaini
+                    Tancacha
+                    Taninga
+                    Tanti
+                    Tasna
+                    Ticino
+                    Tinoco
+                    Tío Pujio
+                    Toledo
+                    Toro Pujio
+                    Tosno
+                    Tosquitas
+                    Tránsito
+                    Tuclame
+                    Ucacha
+                    Unquillo
+                    Valle Alegre
+                    Valle de Anisacate
+                    Valle Hermoso
+                    Viamonte
+                    Vicuña Mackenna
+                    Villa Albertina
+                    Villa Allende
+                    Villa Alpina
+                    Villa Amancay
+                    Villa Ascasubi
+                    Villa Berna
+                    Villa Candelaria
+                    Villa Carlos Paz
+                    Villa Cerro Azul
+                    Villa Ciudad de América (Loteo Diego de Rojas)
+                    Villa Ciudad Parque Los Reartes
+                    Villa Concepción del Tío
+                    Villa Corazon de Maria
+                    Villa Cura Brochero
+                    Villa de Las Rosas
+                    Villa del Dique
+                    Villa del Prado
+                    Villa del Rosario
+                    Villa del Totoral
+                    Villa del Tránsito
+                    Villa de María
+                    Villa de Pocho
+                    Villa de Soto
+                    Villa Dolores
+                    Villa El Chacay
+                    Villa El Fachinal (- Parque Norte - Guiñazú Norte)
+                    Villa Elisa
+                    Villa El Tala
+                    Villa Flor Serrana
+                    Villa Fontana
+                    Villa General Belgrano
+                    Villa Giardino
+                    Villa Gutiérrez
+                    Villa Huidobro
+                    Villa La Bolsa
+                    Villa Lago Azul
+                    Villa La Rivera
+                    Villa La Viña
+                    Villa Los Aromos
+                    Villa Los Llanos (- Juárez Celman)
+                    Villa Los Patos
+                    Villa María
+                    Villa Nueva
+                    Villa Oeste
+                    Villa Parque Santa Ana
+                    Villa Parque Síquiman
+                    Villa Quilino
+                    Villa Quillinzo
+                    Villa Reducción
+                    Villa Río Icho Cruz
+                    Villa Rossi
+                    Villa Rumipal
+                    Villa San Esteban
+                    Villa San Isidro
+                    Villa San José (San José de los Ríos)
+                    Villa Santa Cruz del Lago
+                    Villa Santa Eugenia
+                    Villa Sarmiento
+                    Villa Sarmiento
+                    Villa Sierras de Oro
+                    Villa Tulumba
+                    Villa Valeria
+                    Villa Yacanto (Yacanto de Calamuchita)
+                    Washington
+                    Wenceslao Escalante
+                    Yocsina
+
+                </select>
+                <div class="invalid-feedback">
+                    Please select a valid state.
+                </div>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Dejanos tu mensaje!</label>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        Quiero que me contacten por WhatsApp
+                    </label>
+                    <div class="invalid-feedback">
+                        You must agree before submitting.
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Enviar mensaje</button>
+            </div>
         </form>
     </main>
     <footer class="footer">
